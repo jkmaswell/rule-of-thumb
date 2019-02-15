@@ -1,0 +1,11 @@
+@import '../../../sass/colors';
+@import '../../../sass/commons';
+
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 0 10%;
+}
