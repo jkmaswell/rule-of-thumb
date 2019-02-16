@@ -1,0 +1,25 @@
+<div class="vote-container">
+  <figure>
+    <img class="img" src="assets/{{vote.picture}}" />
+  </figure>
+  <div class="vote-info">
+    <h3 class="vote-title">{{vote.name}}</h3>
+    <span class="vote-subtitle">
+      <time><b class="vote-date">{{vote.since}}</b></time>in {{vote.category}}
+    </span>
+    <p class="vote-desc">{{vote.description}}</p>
+    <div class="voting" *ngIf="voting">
+      <button class="thumbs thumbs-up" [ngClass]="{selected: vote.up}" (click)="selectVote('up')"></button>
+      <button class="thumbs thumbs-down" [ngClass]="{selected: vote.down}" (click)="selectVote('down')"></button>
+      <button class="vote" (click)="voteCard()">Vote now</button>
+    </div>
+    <div class="voted" *ngIf="!voting">
+      <span class="disc">Thank you for voting!</span>
+      <button class="vote" (click)="voteAgain()">Vote again</button>
+    </div>
+    <div class="voting-stats">
+      <div class="upvotes" [ngStyle]="{'width': upvotesPercentage + '%'}">{{upvotesPercentage}}%</div>
+      <div class="downvotes" [ngStyle]="{'width': downvotesPercentage + '%'}">{{downvotesPercentage}}%</div>
+    </div>
+  </div>
+</div>

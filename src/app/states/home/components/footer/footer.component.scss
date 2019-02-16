@@ -1,0 +1,28 @@
+@import '../../../../../sass/colors';
+
+:host {
+  align-items: center;
+  border-top: 1px dotted rgba($black, 0.4);
+  display: flex;
+  opacity: 0.7;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.menu-item,
+.follow {
+  font-size: 0.8rem;
+}
+
+.menu-item {
+  margin-right: 20px;
+}
+
+.follow {
+  align-items: center;
+  display: flex;
+}
+
+.img {
+  margin-left: 15px;
+}

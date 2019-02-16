@@ -9,7 +9,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { BannerComponent } from './states/home/components/banner/banner.component';
 import { MenuComponent } from './states/home/components/menu/menu.component';
 import { ToastrBannerComponent } from './states/home/components/toastr-banner/toastr-banner.component';
-import { VotesComponent } from './states/home/components/votes/votes.component';
+import { VoteComponent } from './states/home/components/vote/vote.component';
+import { VotesService } from './services/votes.service';
+import { LocalStorageService } from './services/local-storage.service';
+import { FooterComponent } from './states/home/components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,14 +21,18 @@ import { VotesComponent } from './states/home/components/votes/votes.component';
     BannerComponent,
     MenuComponent,
     ToastrBannerComponent,
-    VotesComponent
+    VoteComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
     HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    VotesService,
+    LocalStorageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,7 +1,7 @@
 @import '../../../../../sass/colors';
 
 :host {
-  background: url('../../../../../assets/pope-francis.png') 0 0 no-repeat;
+  background: url('../../../../../assets/pope-francis.png') 0 0 fixed;
   background-size: cover;
   min-height: 750px;
   display: flex;
@@ -44,7 +44,6 @@
     }
 
     .pre-title {
-      font-size: 1rem;
       opacity: 0.7;
     }
 

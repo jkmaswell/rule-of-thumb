@@ -10,7 +10,7 @@
 
 .title {
   font-size: 1.3rem;
-  width: 300px;
+  width: 210px;
 
   .bold {
     display: block;
@@ -20,6 +20,7 @@
 
 .info {
   line-height: 1.4;
+  width: calc(100% - 260px);
 }
 
 .close {

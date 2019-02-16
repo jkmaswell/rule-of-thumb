@@ -1,4 +1,19 @@
-<app-banner></app-banner>
-<div class="content">
-  <app-toastr-banner></app-toastr-banner>
-</div>
+<header>
+  <app-banner></app-banner>
+</header>
+<main>
+  <div class="content">
+    <section>
+      <app-toastr-banner></app-toastr-banner>
+    </section>
+    <section>
+      <h2 class="subtitle">Votes</h2>
+      <div class="votes-container">
+        <app-vote class="vote" [vote]="vote" *ngFor="let vote of votes"></app-vote>
+      </div>
+    </section>
+    <footer>
+      <app-footer></app-footer>
+    </footer>
+  </div>
+</main>
