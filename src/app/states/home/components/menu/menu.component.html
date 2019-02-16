@@ -3,9 +3,9 @@
   <div class="menu">
     <a class="menu-icon" (click)="toggleMenu()"></a>
     <div class="menu-content" [ngClass]="{open: open}" >
-      <a class="menu-item">Past Trials</a>
-      <a class="menu-item">How It Works</a>
-      <a class="menu-item">Log In / Sign Up</a>
+      <a class="menu-item" [routerLink]="['/past-trials']">Past Trials</a>
+      <a class="menu-item" [routerLink]="['/how-it-works']">How It Works</a>
+      <a class="menu-item" [routerLink]="['/login-signup']">Log In / Sign Up</a>
     </div>
     <figure>
       <img class="search" src="assets/search.svg" />
