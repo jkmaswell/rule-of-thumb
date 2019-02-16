@@ -7,6 +7,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media(max-width: 980px) {
+    background-position: center 0;
+  }
 }
 
 .blur-box {
@@ -20,6 +24,10 @@
     position: absolute;
     width: 100%;
     height: 100%;
+
+    @media(max-width: 980px) {
+      background-position: center 0;
+    }
   }
 
   .blur-content {
@@ -75,6 +83,10 @@
       font-weight: 700;
       font-size: 1.2rem;
     }
+  }
+
+  @media(max-width: 980px) {
+    margin: 0 10px;
   }
 }
 
@@ -136,6 +148,7 @@
 
     b {
       margin-right: 5px;
+      font-size: 2.3rem;
     }
   }
 }

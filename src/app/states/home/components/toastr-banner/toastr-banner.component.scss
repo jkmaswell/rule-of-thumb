@@ -6,6 +6,10 @@
   align-items: center;
   margin: 30px 0;
   padding: 20px;
+
+  @media(max-width: 767px) {
+    flex-direction: column;
+  }
 }
 
 .title {
@@ -16,11 +20,21 @@
     display: block;
     font-size: 2.3rem;
   }
+
+  @media(max-width: 767px) {
+    margin-bottom: 15px;
+    width: auto;
+  }
 }
 
 .info {
   line-height: 1.4;
   width: calc(100% - 260px);
+
+  @media(max-width: 767px) {
+    margin-bottom: 15px;
+    width: auto;
+  }
 }
 
 .close {
@@ -28,4 +42,8 @@
   font-weight: 300;
   width: 50px;
   text-align: right;
+
+  @media(max-width: 767px) {
+    width: auto;
+  }
 }

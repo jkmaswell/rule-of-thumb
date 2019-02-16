@@ -13,6 +13,7 @@ import { VoteComponent } from './states/home/components/vote/vote.component';
 import { VotesService } from './services/votes.service';
 import { LocalStorageService } from './services/local-storage.service';
 import { FooterComponent } from './states/home/components/footer/footer.component';
+import { SubmitBannerComponent } from './states/home/components/submit-banner/submit-banner.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './states/home/components/footer/footer.componen
     MenuComponent,
     ToastrBannerComponent,
     VoteComponent,
-    FooterComponent
+    FooterComponent,
+    SubmitBannerComponent
   ],
   imports: [
     BrowserModule,

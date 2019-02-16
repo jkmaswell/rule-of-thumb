@@ -9,6 +9,10 @@
 
 .content {
   padding: 0 10%;
+
+  @media(max-width: 980px) {
+    padding: 0 10px;
+  }
 }
 
 .subtitle {
@@ -25,5 +29,18 @@
 
   .vote {
     width: 50%;
+    
+    @media(max-width: 767px) {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+
+  @media(max-width: 980px) {
+    margin: 0 -10px 20px;
+  }
+
+  @media(max-width: 767px) {
+    margin: 0 0 20px;
   }
 }
