@@ -14,6 +14,9 @@ import { VotesService } from './services/votes.service';
 import { LocalStorageService } from './services/local-storage.service';
 import { FooterComponent } from './states/home/components/footer/footer.component';
 import { SubmitBannerComponent } from './states/home/components/submit-banner/submit-banner.component';
+import { PastTrialsComponent } from './states/past-trials/past-trials.component';
+import { HowItWorksComponent } from './states/how-it-works/how-it-works.component';
+import { LoginSignupComponent } from './states/login-signup/login-signup.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { SubmitBannerComponent } from './states/home/components/submit-banner/su
     ToastrBannerComponent,
     VoteComponent,
     FooterComponent,
-    SubmitBannerComponent
+    SubmitBannerComponent,
+    PastTrialsComponent,
+    HowItWorksComponent,
+    LoginSignupComponent
   ],
   imports: [
     BrowserModule,
